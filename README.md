@@ -2,6 +2,14 @@
 
 Frugal algorithm selection is an active learning approach that attempts to reduce the labelling cost by using only a subset of the training data with timeout predictor and dynamic timeout configurations.
 
+## Directory Structure ##
+Below is an overview of the main folders in this repository and their contents:
+
+- __`/DATASETS`__: Contains all datasets that were used in the research.
+- __`/EXPERIMENT_OUTPUTS`__: Includes output files from Slurm for each implemented approach under various configurations.
+- __`/PLOTS`__: Holds all plots that are included in the published paper and its appendix.
+- __`Appendix.pdf`__: This file is supplementary material accompanying the paper. It provides additional data, analyses, and explanations that support the main text of the research.
+
 ## Installation ## 
 
 ### Requirements ###
