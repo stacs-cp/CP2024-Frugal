@@ -26,16 +26,16 @@ This ensures you have the exact environment used in our studies, promoting consi
 # Features: #
 
 ## Timeout Predictor: ##
-*** Timeout Predictor On/Off: *** It can be activated/deactivated with arameter used in the voting mechanism and instance selection
+__Timeout Predictor On/Off:__ It can be activated/deactivated with arameter used in the voting mechanism and instance selection
 
 ## Dynamic Timeout: ##
-*** Adjustable Timeout: *** The dynamic timeout increases during runtime based on performance on the validation set and can be adjusted through parameters to suit different experimental setups.
+__Adjustable Timeout:__ The dynamic timeout increases during runtime based on performance on the validation set and can be adjusted through parameters to suit different experimental setups.
 
 ## Query Size: ##
-*** Customizable Ratio: *** Adjust the query size ratio through parameters to optimize the querying process in learning algorithms.
+__Customizable Ratio:__ Adjust the query size ratio through parameters to optimize the querying process in learning algorithms.
 
 ## Instance Selection Approach ## 
-*** Uncertainty-based and Random: *** Supports different methods of instance selection including uncertainty-based (leveraging modAL) and random approaches.
+__Uncertainty-based and Random:__ Supports different methods of instance selection including uncertainty-based (leveraging modAL) and random approaches.
 
 # Usage # 
 
