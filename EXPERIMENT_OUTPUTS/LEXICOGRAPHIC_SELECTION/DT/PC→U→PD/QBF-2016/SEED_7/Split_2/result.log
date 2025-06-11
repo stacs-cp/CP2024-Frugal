@@ -1,0 +1,592 @@
+2025-02-10 19:54 | INFO | Paramaters are: {'dataset': 'QBF-2016', 'penalty': 10, 'weight': 'No_Weight', 'voting': 'Hard', 'pre_selection_size': 64, 'pre_selection_technique': 'No_pre_selection', 'feature_elimination_threshold': 20, 'imputer_strategy': 'median', 'feature_selection_technique': 'No_feature_selection', 'feature_scaling_technique': 'StandardScaler', 'priority': {'PredCost': 'min', 'Uncertainty': 'max', 'PredDiff': 'max'}, 'initial_train_size': 20, 'query_size': 1, 'timeout_predictor_usage': 'No', 'timeout_limit': 100, 'timeout_increase_rate': 100, 'penalty_type': 'Only-timeout-penalty', 'RANDOM_STATE_SEED': 7, 'n_splits': 10, 'split_number': 2, 'max_timeout': 3600, 'param_grid': {'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 2147483648, 'min_samples_split': 2, 'bootstrap': True}}
+2025-02-10 19:54 | INFO | QBF-2016 is current dataset
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/algorithm_runs.arff is found
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/algorithm_runs.arff is finished
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/feature_values.arff is found
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/feature_values.arff is finished
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/feature_costs.arff is found
+2025-02-10 19:54 | INFO | DATASETS/QBF-2016/feature_costs.arff is finished
+2025-02-10 19:54 | INFO | Virtual best solver time in train = 6647.69
+2025-02-10 19:54 | INFO | Single best solver list train = {'AIGSolve': 5016976.06, 'aqua-f3v': 7924719.82, 'aqua-s2v': 7781776.66, 'aqua-s3o': 7996819.99, 'caqe-minisat': 4618781.31, 'caqe-picosat': 4187951.06, 'depqbf-v1': 8216421.08, 'depqbf-v2': 4150272.01, 'depqbf-v3': 6096195.77, 'ghostq-cegar': 4688984.17, 'ghostq-plain': 4833262.92, 'hiqqer1': 4616142.13, 'hiqqer1ldsq': 4759578.6, 'hiqqer3': 4726116.57, 'iprover-QBF': 10738368.44, 'iprover-QBF-bloqqer': 11275707.13, 'qesto': 4654221.59, 'qestos': 6195173.97, 'qsts': 4828319.34, 'rareqs': 3284450.73, 'squeezebf+struqs': 11062427.38, 'struqs-10': 10954637.23, 'xb-bid-qsts': 2748859.82, 'xb-qsts': 3718041.21}
+2025-02-10 19:54 | INFO | Single best solver time train = xb-bid-qsts (2748859.82)
+2025-02-10 19:54 | INFO | Virtual best solver time in validation = 622.17
+2025-02-10 19:54 | INFO | Single best solver list validation = {'AIGSolve': 973359.88, 'aqua-f3v': 1370168.59, 'aqua-s2v': 1405157.16, 'aqua-s3o': 1405046.06, 'caqe-minisat': 1371222.1, 'caqe-picosat': 1336199.57, 'depqbf-v1': 1981267.29, 'depqbf-v2': 1046542.21, 'depqbf-v3': 1695585.43, 'ghostq-cegar': 1155108.92, 'ghostq-plain': 1550560.47, 'hiqqer1': 1442582.01, 'hiqqer1ldsq': 1478049.77, 'hiqqer3': 1549426.02, 'iprover-QBF': 2845450.19, 'iprover-QBF-bloqqer': 2917019.39, 'qesto': 1228240.38, 'qestos': 1620821.77, 'qsts': 1872492.95, 'rareqs': 795209.5, 'squeezebf+struqs': 2269509.33, 'struqs-10': 2269568.79, 'xb-bid-qsts': 723960.78, 'xb-qsts': 1119512.39}
+2025-02-10 19:54 | INFO | Single best solver time validation = xb-bid-qsts (723960.78)
+2025-02-10 19:54 | INFO | Virtual best solver time in test = 1086.94
+2025-02-10 19:54 | INFO | Single best solver list test = {'AIGSolve': 505459.54, 'aqua-f3v': 936826.25, 'aqua-s2v': 972702.9, 'aqua-s3o': 936675.52, 'caqe-minisat': 829174.2, 'caqe-picosat': 792985.55, 'depqbf-v1': 1044203.37, 'depqbf-v2': 757020.06, 'depqbf-v3': 900159.55, 'ghostq-cegar': 577906.26, 'ghostq-plain': 684993.49, 'hiqqer1': 756789.33, 'hiqqer1ldsq': 756894.87, 'hiqqer3': 757020.75, 'iprover-QBF': 1261103.41, 'iprover-QBF-bloqqer': 1512642.6, 'qesto': 793060.14, 'qestos': 864284.81, 'qsts': 648244.44, 'rareqs': 613481.24, 'squeezebf+struqs': 1440613.49, 'struqs-10': 1440609.94, 'xb-bid-qsts': 398170.89, 'xb-qsts': 649701.91}
+2025-02-10 19:54 | INFO | Single best solver time test = xb-bid-qsts (398170.89)
+2025-02-10 19:55 | INFO | Training Time Passive Learning Classifier: 38.64 seconds
+2025-02-10 19:55 | INFO | Training Time Passive Learning Regressor: 4.6 seconds
+2025-02-10 19:57 | INFO | Passive Learning Classifier Runtime on Validation Set: 1045390.35
+2025-02-10 19:57 | INFO | Passive Learning Classifier Runtime on Test Set: 433235.19
+2025-02-10 19:57 | INFO | Passive Learning Instance Cost: 15100204.99
+2025-02-10 19:57 | INFO | Passive Learning Emissions: 0.0023460223310235906
+2025-02-10 19:57 | INFO | Passive Learning Energy Consumption: 0.002552532203338666 kWh
+2025-02-10 19:58 | INFO | Training Time Active Learning Classifier: 15.46 seconds
+2025-02-10 19:58 | INFO | Training Time Active Learning Regressor: 1.12 seconds
+2025-02-10 20:00 | INFO | Initial Active Learning Runtime on Validation Set: 1119637.21
+2025-02-10 20:00 | INFO | Initial Active Learning Runtime on Test Set: 649560.11
+2025-02-10 20:00 | INFO | Initial Active Learning Instance Cost: 18485.91
+2025-02-10 20:00 | INFO | Bin size = 1455
+2025-02-10 20:01 | INFO | Query 1 Size of the uncertainty table is = 146448/145452
+2025-02-10 20:01 | INFO | Query 1 Size of the filtered table is = 1455
+2025-02-10 20:01 | INFO | Training Time Active Learning Classifier: 14.68 seconds
+2025-02-10 20:01 | INFO | Training Time Active Learning Regressor: 1.23 seconds
+2025-02-10 20:04 | INFO | Query 1 Active Learning Runtime on Validation Set: 1335196.534
+2025-02-10 20:04 | INFO | Query 1 Active Learning Runtime on Test Set: 577560.254
+2025-02-10 20:04 | INFO | Query 1 Active Learning Instance Cost: 18717.34
+2025-02-10 20:04 | INFO | Timeout limit is increased to 200
+2025-02-10 20:05 | INFO | Query 2 Size of the uncertainty table is = 144626/145452
+2025-02-10 20:05 | INFO | Query 2 Size of the filtered table is = 1455
+2025-02-10 20:05 | INFO | Training Time Active Learning Classifier: 14.82 seconds
+2025-02-10 20:05 | INFO | Training Time Active Learning Regressor: 1.33 seconds
+2025-02-10 20:08 | INFO | Query 2 Active Learning Runtime on Validation Set: 1046947.174
+2025-02-10 20:08 | INFO | Query 2 Active Learning Runtime on Test Set: 577542.884
+2025-02-10 20:08 | INFO | Query 2 Active Learning Instance Cost: 19053.41
+2025-02-10 20:09 | INFO | Query 3 Size of the uncertainty table is = 142943/145452
+2025-02-10 20:09 | INFO | Query 3 Size of the filtered table is = 1455
+2025-02-10 20:09 | INFO | Training Time Active Learning Classifier: 15.17 seconds
+2025-02-10 20:09 | INFO | Training Time Active Learning Regressor: 1.4 seconds
+2025-02-10 20:12 | INFO | Query 3 Active Learning Runtime on Validation Set: 1154102.844
+2025-02-10 20:12 | INFO | Query 3 Active Learning Runtime on Test Set: 649556.5739999999
+2025-02-10 20:12 | INFO | Query 3 Active Learning Instance Cost: 20352.0
+2025-02-10 20:12 | INFO | Timeout limit is increased to 300
+2025-02-10 20:13 | INFO | Query 4 Size of the uncertainty table is = 141401/145452
+2025-02-10 20:13 | INFO | Query 4 Size of the filtered table is = 1455
+2025-02-10 20:13 | INFO | Training Time Active Learning Classifier: 15.18 seconds
+2025-02-10 20:13 | INFO | Training Time Active Learning Regressor: 1.5 seconds
+2025-02-10 20:16 | INFO | Query 4 Active Learning Runtime on Validation Set: 1154720.7040000001
+2025-02-10 20:16 | INFO | Query 4 Active Learning Runtime on Test Set: 577557.914
+2025-02-10 20:16 | INFO | Query 4 Active Learning Instance Cost: 21182.49
+2025-02-10 20:16 | INFO | Timeout limit is increased to 400
+2025-02-10 20:17 | INFO | Query 5 Size of the uncertainty table is = 139843/145452
+2025-02-10 20:17 | INFO | Query 5 Size of the filtered table is = 1455
+2025-02-10 20:17 | INFO | Training Time Active Learning Classifier: 15.39 seconds
+2025-02-10 20:18 | INFO | Training Time Active Learning Regressor: 1.58 seconds
+2025-02-10 20:20 | INFO | Query 5 Active Learning Runtime on Validation Set: 1118511.2440000002
+2025-02-10 20:20 | INFO | Query 5 Active Learning Runtime on Test Set: 541564.164
+2025-02-10 20:20 | INFO | Query 5 Active Learning Instance Cost: 27112.25
+2025-02-10 20:21 | INFO | Query 6 Size of the uncertainty table is = 138286/145452
+2025-02-10 20:21 | INFO | Query 6 Size of the filtered table is = 1455
+2025-02-10 20:22 | INFO | Training Time Active Learning Classifier: 15.73 seconds
+2025-02-10 20:22 | INFO | Training Time Active Learning Regressor: 1.66 seconds
+2025-02-10 20:24 | INFO | Query 6 Active Learning Runtime on Validation Set: 1082652.084
+2025-02-10 20:24 | INFO | Query 6 Active Learning Runtime on Test Set: 613254.914
+2025-02-10 20:24 | INFO | Query 6 Active Learning Instance Cost: 32744.42
+2025-02-10 20:26 | INFO | Query 7 Size of the uncertainty table is = 136779/145452
+2025-02-10 20:26 | INFO | Query 7 Size of the filtered table is = 1455
+2025-02-10 20:26 | INFO | Training Time Active Learning Classifier: 15.8 seconds
+2025-02-10 20:26 | INFO | Training Time Active Learning Regressor: 1.93 seconds
+2025-02-10 20:29 | INFO | Query 7 Active Learning Runtime on Validation Set: 1190387.424
+2025-02-10 20:29 | INFO | Query 7 Active Learning Runtime on Test Set: 613305.554
+2025-02-10 20:29 | INFO | Query 7 Active Learning Instance Cost: 35324.11
+2025-02-10 20:29 | INFO | Timeout limit is increased to 500
+2025-02-10 20:30 | INFO | Query 8 Size of the uncertainty table is = 135262/145452
+2025-02-10 20:30 | INFO | Query 8 Size of the filtered table is = 1455
+2025-02-10 20:30 | INFO | Training Time Active Learning Classifier: 15.96 seconds
+2025-02-10 20:30 | INFO | Training Time Active Learning Regressor: 1.79 seconds
+2025-02-10 20:33 | INFO | Query 8 Active Learning Runtime on Validation Set: 1226002.164
+2025-02-10 20:33 | INFO | Query 8 Active Learning Runtime on Test Set: 577355.9739999999
+2025-02-10 20:33 | INFO | Query 8 Active Learning Instance Cost: 38557.18
+2025-02-10 20:33 | INFO | Timeout limit is increased to 600
+2025-02-10 20:35 | INFO | Query 9 Size of the uncertainty table is = 133764/145452
+2025-02-10 20:35 | INFO | Query 9 Size of the filtered table is = 1455
+2025-02-10 20:35 | INFO | Training Time Active Learning Classifier: 16.4 seconds
+2025-02-10 20:35 | INFO | Training Time Active Learning Regressor: 1.86 seconds
+2025-02-10 20:37 | INFO | Query 9 Active Learning Runtime on Validation Set: 867504.9539999999
+2025-02-10 20:37 | INFO | Query 9 Active Learning Runtime on Test Set: 577334.924
+2025-02-10 20:37 | INFO | Query 9 Active Learning Instance Cost: 46757.57
+2025-02-10 20:39 | INFO | Query 10 Size of the uncertainty table is = 132257/145452
+2025-02-10 20:39 | INFO | Query 10 Size of the filtered table is = 1455
+2025-02-10 20:39 | INFO | Training Time Active Learning Classifier: 16.6 seconds
+2025-02-10 20:39 | INFO | Training Time Active Learning Regressor: 1.9 seconds
+2025-02-10 20:42 | INFO | Query 10 Active Learning Runtime on Validation Set: 1046092.244
+2025-02-10 20:42 | INFO | Query 10 Active Learning Runtime on Test Set: 577266.174
+2025-02-10 20:42 | INFO | Query 10 Active Learning Instance Cost: 49324.3
+2025-02-10 20:42 | INFO | Timeout limit is increased to 700
+2025-02-10 20:44 | INFO | Query 11 Size of the uncertainty table is = 130766/145452
+2025-02-10 20:44 | INFO | Query 11 Size of the filtered table is = 1455
+2025-02-10 20:44 | INFO | Training Time Active Learning Classifier: 16.8 seconds
+2025-02-10 20:44 | INFO | Training Time Active Learning Regressor: 1.96 seconds
+2025-02-10 20:46 | INFO | Query 11 Active Learning Runtime on Validation Set: 903276.064
+2025-02-10 20:46 | INFO | Query 11 Active Learning Runtime on Test Set: 541238.4839999999
+2025-02-10 20:46 | INFO | Query 11 Active Learning Instance Cost: 55662.58
+2025-02-10 20:48 | INFO | Query 12 Size of the uncertainty table is = 129254/145452
+2025-02-10 20:48 | INFO | Query 12 Size of the filtered table is = 1455
+2025-02-10 20:48 | INFO | Training Time Active Learning Classifier: 16.85 seconds
+2025-02-10 20:48 | INFO | Training Time Active Learning Regressor: 2.0 seconds
+2025-02-10 20:51 | INFO | Query 12 Active Learning Runtime on Validation Set: 1011058.944
+2025-02-10 20:51 | INFO | Query 12 Active Learning Runtime on Test Set: 684924.644
+2025-02-10 20:51 | INFO | Query 12 Active Learning Instance Cost: 59397.63
+2025-02-10 20:51 | INFO | Timeout limit is increased to 800
+2025-02-10 20:53 | INFO | Query 13 Size of the uncertainty table is = 127693/145452
+2025-02-10 20:53 | INFO | Query 13 Size of the filtered table is = 1455
+2025-02-10 20:53 | INFO | Training Time Active Learning Classifier: 17.21 seconds
+2025-02-10 20:53 | INFO | Training Time Active Learning Regressor: 2.05 seconds
+2025-02-10 20:56 | INFO | Query 13 Active Learning Runtime on Validation Set: 1155380.7040000001
+2025-02-10 20:56 | INFO | Query 13 Active Learning Runtime on Test Set: 685029.5739999999
+2025-02-10 20:56 | INFO | Query 13 Active Learning Instance Cost: 70109.54
+2025-02-10 20:56 | INFO | Timeout limit is increased to 900
+2025-02-10 20:57 | INFO | Query 14 Size of the uncertainty table is = 126212/145452
+2025-02-10 20:57 | INFO | Query 14 Size of the filtered table is = 1455
+2025-02-10 20:58 | INFO | Training Time Active Learning Classifier: 17.26 seconds
+2025-02-10 20:58 | INFO | Training Time Active Learning Regressor: 2.09 seconds
+2025-02-10 21:00 | INFO | Query 14 Active Learning Runtime on Validation Set: 1010355.384
+2025-02-10 21:00 | INFO | Query 14 Active Learning Runtime on Test Set: 648934.884
+2025-02-10 21:00 | INFO | Query 14 Active Learning Instance Cost: 83195.25
+2025-02-10 21:02 | INFO | Query 15 Size of the uncertainty table is = 124683/145452
+2025-02-10 21:02 | INFO | Query 15 Size of the filtered table is = 1455
+2025-02-10 21:02 | INFO | Training Time Active Learning Classifier: 17.71 seconds
+2025-02-10 21:02 | INFO | Training Time Active Learning Regressor: 2.13 seconds
+2025-02-10 21:05 | INFO | Query 15 Active Learning Runtime on Validation Set: 1082109.054
+2025-02-10 21:05 | INFO | Query 15 Active Learning Runtime on Test Set: 612940.2039999999
+2025-02-10 21:05 | INFO | Query 15 Active Learning Instance Cost: 97191.86
+2025-02-10 21:05 | INFO | Timeout limit is increased to 1000
+2025-02-10 21:06 | INFO | Query 16 Size of the uncertainty table is = 123168/145452
+2025-02-10 21:06 | INFO | Query 16 Size of the filtered table is = 1455
+2025-02-10 21:07 | INFO | Training Time Active Learning Classifier: 17.92 seconds
+2025-02-10 21:07 | INFO | Training Time Active Learning Regressor: 2.18 seconds
+2025-02-10 21:09 | INFO | Query 16 Active Learning Runtime on Validation Set: 974308.0939999999
+2025-02-10 21:09 | INFO | Query 16 Active Learning Runtime on Test Set: 469266.684
+2025-02-10 21:09 | INFO | Query 16 Active Learning Instance Cost: 108157.87
+2025-02-10 21:11 | INFO | Query 17 Size of the uncertainty table is = 121674/145452
+2025-02-10 21:11 | INFO | Query 17 Size of the filtered table is = 1455
+2025-02-10 21:11 | INFO | Training Time Active Learning Classifier: 18.03 seconds
+2025-02-10 21:11 | INFO | Training Time Active Learning Regressor: 2.23 seconds
+2025-02-10 21:14 | INFO | Query 17 Active Learning Runtime on Validation Set: 902979.994
+2025-02-10 21:14 | INFO | Query 17 Active Learning Runtime on Test Set: 612979.0839999999
+2025-02-10 21:14 | INFO | Query 17 Active Learning Instance Cost: 123216.56
+2025-02-10 21:16 | INFO | Query 18 Size of the uncertainty table is = 120169/145452
+2025-02-10 21:16 | INFO | Query 18 Size of the filtered table is = 1455
+2025-02-10 21:16 | INFO | Training Time Active Learning Classifier: 18.33 seconds
+2025-02-10 21:16 | INFO | Training Time Active Learning Regressor: 2.31 seconds
+2025-02-10 21:19 | INFO | Query 18 Active Learning Runtime on Validation Set: 1009791.014
+2025-02-10 21:19 | INFO | Query 18 Active Learning Runtime on Test Set: 577005.434
+2025-02-10 21:19 | INFO | Query 18 Active Learning Instance Cost: 164586.9
+2025-02-10 21:19 | INFO | Timeout limit is increased to 1100
+2025-02-10 21:20 | INFO | Query 19 Size of the uncertainty table is = 118629/145452
+2025-02-10 21:20 | INFO | Query 19 Size of the filtered table is = 1455
+2025-02-10 21:21 | INFO | Training Time Active Learning Classifier: 18.41 seconds
+2025-02-10 21:21 | INFO | Training Time Active Learning Regressor: 2.39 seconds
+2025-02-10 21:24 | INFO | Query 19 Active Learning Runtime on Validation Set: 830772.524
+2025-02-10 21:24 | INFO | Query 19 Active Learning Runtime on Test Set: 684915.394
+2025-02-10 21:24 | INFO | Query 19 Active Learning Instance Cost: 181225.48
+2025-02-10 21:25 | INFO | Query 20 Size of the uncertainty table is = 117095/145452
+2025-02-10 21:25 | INFO | Query 20 Size of the filtered table is = 1455
+2025-02-10 21:26 | INFO | Training Time Active Learning Classifier: 18.73 seconds
+2025-02-10 21:26 | INFO | Training Time Active Learning Regressor: 2.48 seconds
+2025-02-10 21:28 | INFO | Query 20 Active Learning Runtime on Validation Set: 1010202.0839999999
+2025-02-10 21:28 | INFO | Query 20 Active Learning Runtime on Test Set: 684820.0939999999
+2025-02-10 21:28 | INFO | Query 20 Active Learning Instance Cost: 204831.53
+2025-02-10 21:28 | INFO | Timeout limit is increased to 1200
+2025-02-10 21:30 | INFO | Query 21 Size of the uncertainty table is = 115477/145452
+2025-02-10 21:30 | INFO | Query 21 Size of the filtered table is = 1455
+2025-02-10 21:31 | INFO | Training Time Active Learning Classifier: 19.22 seconds
+2025-02-10 21:31 | INFO | Training Time Active Learning Regressor: 2.55 seconds
+2025-02-10 21:33 | INFO | Query 21 Active Learning Runtime on Validation Set: 866004.044
+2025-02-10 21:33 | INFO | Query 21 Active Learning Runtime on Test Set: 612885.804
+2025-02-10 21:33 | INFO | Query 21 Active Learning Instance Cost: 224634.64
+2025-02-10 21:35 | INFO | Query 22 Size of the uncertainty table is = 113921/145452
+2025-02-10 21:35 | INFO | Query 22 Size of the filtered table is = 1455
+2025-02-10 21:35 | INFO | Training Time Active Learning Classifier: 19.53 seconds
+2025-02-10 21:35 | INFO | Training Time Active Learning Regressor: 2.62 seconds
+2025-02-10 21:38 | INFO | Query 22 Active Learning Runtime on Validation Set: 794993.394
+2025-02-10 21:38 | INFO | Query 22 Active Learning Runtime on Test Set: 576944.744
+2025-02-10 21:38 | INFO | Query 22 Active Learning Instance Cost: 255127.97
+2025-02-10 21:40 | INFO | Query 23 Size of the uncertainty table is = 112350/145452
+2025-02-10 21:40 | INFO | Query 23 Size of the filtered table is = 1455
+2025-02-10 21:40 | INFO | Training Time Active Learning Classifier: 19.69 seconds
+2025-02-10 21:40 | INFO | Training Time Active Learning Regressor: 2.91 seconds
+2025-02-10 21:43 | INFO | Query 23 Active Learning Runtime on Validation Set: 795063.924
+2025-02-10 21:43 | INFO | Query 23 Active Learning Runtime on Test Set: 577215.4839999999
+2025-02-10 21:43 | INFO | Query 23 Active Learning Instance Cost: 295746.25
+2025-02-10 21:43 | INFO | Timeout limit is increased to 1300
+2025-02-10 21:45 | INFO | Query 24 Size of the uncertainty table is = 110730/145452
+2025-02-10 21:45 | INFO | Query 24 Size of the filtered table is = 1455
+2025-02-10 21:45 | INFO | Training Time Active Learning Classifier: 19.98 seconds
+2025-02-10 21:45 | INFO | Training Time Active Learning Regressor: 3.0 seconds
+2025-02-10 21:48 | INFO | Query 24 Active Learning Runtime on Validation Set: 1010074.2239999999
+2025-02-10 21:48 | INFO | Query 24 Active Learning Runtime on Test Set: 541548.994
+2025-02-10 21:48 | INFO | Query 24 Active Learning Instance Cost: 353839.26
+2025-02-10 21:48 | INFO | Timeout limit is increased to 1400
+2025-02-10 21:50 | INFO | Query 25 Size of the uncertainty table is = 109095/145452
+2025-02-10 21:50 | INFO | Query 25 Size of the filtered table is = 1455
+2025-02-10 21:50 | INFO | Training Time Active Learning Classifier: 20.33 seconds
+2025-02-10 21:50 | INFO | Training Time Active Learning Regressor: 2.85 seconds
+2025-02-10 21:53 | INFO | Query 25 Active Learning Runtime on Validation Set: 1082235.374
+2025-02-10 21:53 | INFO | Query 25 Active Learning Runtime on Test Set: 540907.744
+2025-02-10 21:53 | INFO | Query 25 Active Learning Instance Cost: 369483.33
+2025-02-10 21:53 | INFO | Timeout limit is increased to 1500
+2025-02-10 21:55 | INFO | Query 26 Size of the uncertainty table is = 107496/145452
+2025-02-10 21:55 | INFO | Query 26 Size of the filtered table is = 1455
+2025-02-10 21:55 | INFO | Training Time Active Learning Classifier: 20.84 seconds
+2025-02-10 21:55 | INFO | Training Time Active Learning Regressor: 2.88 seconds
+2025-02-10 21:58 | INFO | Query 26 Active Learning Runtime on Validation Set: 830220.364
+2025-02-10 21:58 | INFO | Query 26 Active Learning Runtime on Test Set: 505205.924
+2025-02-10 21:58 | INFO | Query 26 Active Learning Instance Cost: 418497.88
+2025-02-10 22:00 | INFO | Query 27 Size of the uncertainty table is = 105943/145452
+2025-02-10 22:00 | INFO | Query 27 Size of the filtered table is = 1455
+2025-02-10 22:00 | INFO | Training Time Active Learning Classifier: 20.99 seconds
+2025-02-10 22:00 | INFO | Training Time Active Learning Regressor: 2.95 seconds
+2025-02-10 22:03 | INFO | Query 27 Active Learning Runtime on Validation Set: 614559.2039999999
+2025-02-10 22:03 | INFO | Query 27 Active Learning Runtime on Test Set: 576938.924
+2025-02-10 22:03 | INFO | Query 27 Active Learning Instance Cost: 460514.41
+2025-02-10 22:05 | INFO | Query 28 Size of the uncertainty table is = 104372/145452
+2025-02-10 22:05 | INFO | Query 28 Size of the filtered table is = 1455
+2025-02-10 22:05 | INFO | Training Time Active Learning Classifier: 21.37 seconds
+2025-02-10 22:05 | INFO | Training Time Active Learning Regressor: 2.99 seconds
+2025-02-10 22:08 | INFO | Query 28 Active Learning Runtime on Validation Set: 722377.144
+2025-02-10 22:08 | INFO | Query 28 Active Learning Runtime on Test Set: 540939.064
+2025-02-10 22:08 | INFO | Query 28 Active Learning Instance Cost: 495741.51
+2025-02-10 22:08 | INFO | Timeout limit is increased to 1600
+2025-02-10 22:10 | INFO | Query 29 Size of the uncertainty table is = 102791/145452
+2025-02-10 22:10 | INFO | Query 29 Size of the filtered table is = 1455
+2025-02-10 22:10 | INFO | Training Time Active Learning Classifier: 21.93 seconds
+2025-02-10 22:10 | INFO | Training Time Active Learning Regressor: 3.05 seconds
+2025-02-10 22:13 | INFO | Query 29 Active Learning Runtime on Validation Set: 829803.124
+2025-02-10 22:13 | INFO | Query 29 Active Learning Runtime on Test Set: 504994.324
+2025-02-10 22:13 | INFO | Query 29 Active Learning Instance Cost: 539502.96
+2025-02-10 22:13 | INFO | Timeout limit is increased to 1700
+2025-02-10 22:15 | INFO | Query 30 Size of the uncertainty table is = 101181/145452
+2025-02-10 22:15 | INFO | Query 30 Size of the filtered table is = 1455
+2025-02-10 22:15 | INFO | Training Time Active Learning Classifier: 22.37 seconds
+2025-02-10 22:15 | INFO | Training Time Active Learning Regressor: 3.09 seconds
+2025-02-10 22:18 | INFO | Query 30 Active Learning Runtime on Validation Set: 722009.014
+2025-02-10 22:18 | INFO | Query 30 Active Learning Runtime on Test Set: 505449.884
+2025-02-10 22:18 | INFO | Query 30 Active Learning Instance Cost: 588208.62
+2025-02-10 22:20 | INFO | Query 31 Size of the uncertainty table is = 99595/145452
+2025-02-10 22:20 | INFO | Query 31 Size of the filtered table is = 1455
+2025-02-10 22:20 | INFO | Training Time Active Learning Classifier: 22.5 seconds
+2025-02-10 22:20 | INFO | Training Time Active Learning Regressor: 3.17 seconds
+2025-02-10 22:23 | INFO | Query 31 Active Learning Runtime on Validation Set: 829573.494
+2025-02-10 22:23 | INFO | Query 31 Active Learning Runtime on Test Set: 469429.634
+2025-02-10 22:23 | INFO | Query 31 Active Learning Instance Cost: 633303.05
+2025-02-10 22:23 | INFO | Timeout limit is increased to 1800
+2025-02-10 22:25 | INFO | Query 32 Size of the uncertainty table is = 97937/145452
+2025-02-10 22:25 | INFO | Query 32 Size of the filtered table is = 1455
+2025-02-10 22:25 | INFO | Training Time Active Learning Classifier: 22.91 seconds
+2025-02-10 22:26 | INFO | Training Time Active Learning Regressor: 3.25 seconds
+2025-02-10 22:28 | INFO | Query 32 Active Learning Runtime on Validation Set: 757915.7339999999
+2025-02-10 22:28 | INFO | Query 32 Active Learning Runtime on Test Set: 469481.254
+2025-02-10 22:28 | INFO | Query 32 Active Learning Instance Cost: 723089.88
+2025-02-10 22:30 | INFO | Query 33 Size of the uncertainty table is = 96307/145452
+2025-02-10 22:30 | INFO | Query 33 Size of the filtered table is = 1455
+2025-02-10 22:31 | INFO | Training Time Active Learning Classifier: 23.59 seconds
+2025-02-10 22:31 | INFO | Training Time Active Learning Regressor: 3.3 seconds
+2025-02-10 22:33 | INFO | Query 33 Active Learning Runtime on Validation Set: 1117726.384
+2025-02-10 22:33 | INFO | Query 33 Active Learning Runtime on Test Set: 505491.78400000004
+2025-02-10 22:33 | INFO | Query 33 Active Learning Instance Cost: 822760.11
+2025-02-10 22:33 | INFO | Timeout limit is increased to 1900
+2025-02-10 22:35 | INFO | Query 34 Size of the uncertainty table is = 94536/145452
+2025-02-10 22:35 | INFO | Query 34 Size of the filtered table is = 1455
+2025-02-10 22:36 | INFO | Training Time Active Learning Classifier: 23.82 seconds
+2025-02-10 22:36 | INFO | Training Time Active Learning Regressor: 3.36 seconds
+2025-02-10 22:38 | INFO | Query 34 Active Learning Runtime on Validation Set: 1045558.164
+2025-02-10 22:38 | INFO | Query 34 Active Learning Runtime on Test Set: 505479.16400000005
+2025-02-10 22:38 | INFO | Query 34 Active Learning Instance Cost: 915154.79
+2025-02-10 22:40 | INFO | Query 35 Size of the uncertainty table is = 92793/145452
+2025-02-10 22:40 | INFO | Query 35 Size of the filtered table is = 1455
+2025-02-10 22:41 | INFO | Training Time Active Learning Classifier: 24.21 seconds
+2025-02-10 22:41 | INFO | Training Time Active Learning Regressor: 3.42 seconds
+2025-02-10 22:44 | INFO | Query 35 Active Learning Runtime on Validation Set: 1081623.304
+2025-02-10 22:44 | INFO | Query 35 Active Learning Runtime on Test Set: 541132.774
+2025-02-10 22:44 | INFO | Query 35 Active Learning Instance Cost: 1022193.74
+2025-02-10 22:44 | INFO | Timeout limit is increased to 2000
+2025-02-10 22:46 | INFO | Query 36 Size of the uncertainty table is = 91108/145452
+2025-02-10 22:46 | INFO | Query 36 Size of the filtered table is = 1455
+2025-02-10 22:46 | INFO | Training Time Active Learning Classifier: 24.64 seconds
+2025-02-10 22:46 | INFO | Training Time Active Learning Regressor: 3.67 seconds
+2025-02-10 22:49 | INFO | Query 36 Active Learning Runtime on Validation Set: 901830.5739999999
+2025-02-10 22:49 | INFO | Query 36 Active Learning Runtime on Test Set: 469207.684
+2025-02-10 22:49 | INFO | Query 36 Active Learning Instance Cost: 1139637.34
+2025-02-10 22:51 | INFO | Query 37 Size of the uncertainty table is = 89574/145452
+2025-02-10 22:51 | INFO | Query 37 Size of the filtered table is = 1455
+2025-02-10 22:51 | INFO | Training Time Active Learning Classifier: 24.96 seconds
+2025-02-10 22:51 | INFO | Training Time Active Learning Regressor: 3.49 seconds
+2025-02-10 22:54 | INFO | Query 37 Active Learning Runtime on Validation Set: 1009498.2139999999
+2025-02-10 22:54 | INFO | Query 37 Active Learning Runtime on Test Set: 541151.2039999999
+2025-02-10 22:54 | INFO | Query 37 Active Learning Instance Cost: 1216098.82
+2025-02-10 22:54 | INFO | Timeout limit is increased to 2100
+2025-02-10 22:56 | INFO | Query 38 Size of the uncertainty table is = 87995/145452
+2025-02-10 22:56 | INFO | Query 38 Size of the filtered table is = 1455
+2025-02-10 22:57 | INFO | Training Time Active Learning Classifier: 25.32 seconds
+2025-02-10 22:57 | INFO | Training Time Active Learning Regressor: 3.56 seconds
+2025-02-10 22:59 | INFO | Query 38 Active Learning Runtime on Validation Set: 1225284.574
+2025-02-10 22:59 | INFO | Query 38 Active Learning Runtime on Test Set: 505317.674
+2025-02-10 22:59 | INFO | Query 38 Active Learning Instance Cost: 1328711.58
+2025-02-10 22:59 | INFO | Timeout limit is increased to 2200
+2025-02-10 23:01 | INFO | Query 39 Size of the uncertainty table is = 86372/145452
+2025-02-10 23:01 | INFO | Query 39 Size of the filtered table is = 1455
+2025-02-10 23:02 | INFO | Training Time Active Learning Classifier: 25.75 seconds
+2025-02-10 23:02 | INFO | Training Time Active Learning Regressor: 3.57 seconds
+2025-02-10 23:05 | INFO | Query 39 Active Learning Runtime on Validation Set: 1117382.4540000001
+2025-02-10 23:05 | INFO | Query 39 Active Learning Runtime on Test Set: 505290.53400000004
+2025-02-10 23:05 | INFO | Query 39 Active Learning Instance Cost: 1372858.62
+2025-02-10 23:07 | INFO | Query 40 Size of the uncertainty table is = 84753/145452
+2025-02-10 23:07 | INFO | Query 40 Size of the filtered table is = 1455
+2025-02-10 23:07 | INFO | Training Time Active Learning Classifier: 26.17 seconds
+2025-02-10 23:07 | INFO | Training Time Active Learning Regressor: 3.61 seconds
+2025-02-10 23:10 | INFO | Query 40 Active Learning Runtime on Validation Set: 973956.814
+2025-02-10 23:10 | INFO | Query 40 Active Learning Runtime on Test Set: 505291.46400000004
+2025-02-10 23:10 | INFO | Query 40 Active Learning Instance Cost: 1468862.64
+2025-02-10 23:12 | INFO | Query 41 Size of the uncertainty table is = 83155/145452
+2025-02-10 23:12 | INFO | Query 41 Size of the filtered table is = 1455
+2025-02-10 23:12 | INFO | Training Time Active Learning Classifier: 26.74 seconds
+2025-02-10 23:12 | INFO | Training Time Active Learning Regressor: 3.64 seconds
+2025-02-10 23:15 | INFO | Query 41 Active Learning Runtime on Validation Set: 973965.064
+2025-02-10 23:15 | INFO | Query 41 Active Learning Runtime on Test Set: 469331.814
+2025-02-10 23:15 | INFO | Query 41 Active Learning Instance Cost: 1601098.09
+2025-02-10 23:15 | INFO | Timeout limit is increased to 2300
+2025-02-10 23:17 | INFO | Query 42 Size of the uncertainty table is = 81591/145452
+2025-02-10 23:17 | INFO | Query 42 Size of the filtered table is = 1455
+2025-02-10 23:18 | INFO | Training Time Active Learning Classifier: 27.09 seconds
+2025-02-10 23:18 | INFO | Training Time Active Learning Regressor: 3.69 seconds
+2025-02-10 23:20 | INFO | Query 42 Active Learning Runtime on Validation Set: 1333291.624
+2025-02-10 23:20 | INFO | Query 42 Active Learning Runtime on Test Set: 541390.4739999999
+2025-02-10 23:20 | INFO | Query 42 Active Learning Instance Cost: 1766354.84
+2025-02-10 23:20 | INFO | Timeout limit is increased to 2400
+2025-02-10 23:22 | INFO | Query 43 Size of the uncertainty table is = 79964/145452
+2025-02-10 23:22 | INFO | Query 43 Size of the filtered table is = 1455
+2025-02-10 23:23 | INFO | Training Time Active Learning Classifier: 27.62 seconds
+2025-02-10 23:23 | INFO | Training Time Active Learning Regressor: 3.73 seconds
+2025-02-10 23:25 | INFO | Query 43 Active Learning Runtime on Validation Set: 1261208.644
+2025-02-10 23:25 | INFO | Query 43 Active Learning Runtime on Test Set: 541298.024
+2025-02-10 23:25 | INFO | Query 43 Active Learning Instance Cost: 1915711.39
+2025-02-10 23:27 | INFO | Query 44 Size of the uncertainty table is = 78369/145452
+2025-02-10 23:27 | INFO | Query 44 Size of the filtered table is = 1455
+2025-02-10 23:28 | INFO | Training Time Active Learning Classifier: 27.93 seconds
+2025-02-10 23:28 | INFO | Training Time Active Learning Regressor: 3.75 seconds
+2025-02-10 23:31 | INFO | Query 44 Active Learning Runtime on Validation Set: 1261224.4940000002
+2025-02-10 23:31 | INFO | Query 44 Active Learning Runtime on Test Set: 541129.894
+2025-02-10 23:31 | INFO | Query 44 Active Learning Instance Cost: 2060357.97
+2025-02-10 23:31 | INFO | Timeout limit is increased to 2500
+2025-02-10 23:33 | INFO | Query 45 Size of the uncertainty table is = 76784/145452
+2025-02-10 23:33 | INFO | Query 45 Size of the filtered table is = 1455
+2025-02-10 23:33 | INFO | Training Time Active Learning Classifier: 28.33 seconds
+2025-02-10 23:33 | INFO | Training Time Active Learning Regressor: 3.81 seconds
+2025-02-10 23:36 | INFO | Query 45 Active Learning Runtime on Validation Set: 1225248.344
+2025-02-10 23:36 | INFO | Query 45 Active Learning Runtime on Test Set: 541299.024
+2025-02-10 23:36 | INFO | Query 45 Active Learning Instance Cost: 2198560.41
+2025-02-10 23:38 | INFO | Query 46 Size of the uncertainty table is = 75211/145452
+2025-02-10 23:38 | INFO | Query 46 Size of the filtered table is = 1455
+2025-02-10 23:38 | INFO | Training Time Active Learning Classifier: 28.47 seconds
+2025-02-10 23:39 | INFO | Training Time Active Learning Regressor: 3.86 seconds
+2025-02-10 23:41 | INFO | Query 46 Active Learning Runtime on Validation Set: 1369237.114
+2025-02-10 23:41 | INFO | Query 46 Active Learning Runtime on Test Set: 577115.2039999999
+2025-02-10 23:41 | INFO | Query 46 Active Learning Instance Cost: 2344240.85
+2025-02-10 23:41 | INFO | Timeout limit is increased to 2600
+2025-02-10 23:43 | INFO | Query 47 Size of the uncertainty table is = 73580/145452
+2025-02-10 23:43 | INFO | Query 47 Size of the filtered table is = 1455
+2025-02-10 23:44 | INFO | Training Time Active Learning Classifier: 28.73 seconds
+2025-02-10 23:44 | INFO | Training Time Active Learning Regressor: 3.88 seconds
+2025-02-10 23:46 | INFO | Query 47 Active Learning Runtime on Validation Set: 1261175.534
+2025-02-10 23:46 | INFO | Query 47 Active Learning Runtime on Test Set: 613110.774
+2025-02-10 23:46 | INFO | Query 47 Active Learning Instance Cost: 2478635.16
+2025-02-10 23:48 | INFO | Query 48 Size of the uncertainty table is = 71982/145452
+2025-02-10 23:48 | INFO | Query 48 Size of the filtered table is = 1455
+2025-02-10 23:49 | INFO | Training Time Active Learning Classifier: 29.15 seconds
+2025-02-10 23:49 | INFO | Training Time Active Learning Regressor: 3.91 seconds
+2025-02-10 23:52 | INFO | Query 48 Active Learning Runtime on Validation Set: 1081842.2140000002
+2025-02-10 23:52 | INFO | Query 48 Active Learning Runtime on Test Set: 505330.72400000005
+2025-02-10 23:52 | INFO | Query 48 Active Learning Instance Cost: 2632189.37
+2025-02-10 23:54 | INFO | Query 49 Size of the uncertainty table is = 70292/145452
+2025-02-10 23:54 | INFO | Query 49 Size of the filtered table is = 1455
+2025-02-10 23:54 | INFO | Training Time Active Learning Classifier: 29.54 seconds
+2025-02-10 23:54 | INFO | Training Time Active Learning Regressor: 4.14 seconds
+2025-02-10 23:57 | INFO | Query 49 Active Learning Runtime on Validation Set: 1225599.6840000001
+2025-02-10 23:57 | INFO | Query 49 Active Learning Runtime on Test Set: 541128.694
+2025-02-10 23:57 | INFO | Query 49 Active Learning Instance Cost: 2740976.27
+2025-02-10 23:57 | INFO | Timeout limit is increased to 2700
+2025-02-10 23:59 | INFO | Query 50 Size of the uncertainty table is = 68619/145452
+2025-02-10 23:59 | INFO | Query 50 Size of the filtered table is = 1455
+2025-02-10 23:59 | INFO | Training Time Active Learning Classifier: 30.12 seconds
+2025-02-10 23:59 | INFO | Training Time Active Learning Regressor: 3.95 seconds
+2025-02-11 00:02 | INFO | Query 50 Active Learning Runtime on Validation Set: 1297471.884
+2025-02-11 00:02 | INFO | Query 50 Active Learning Runtime on Test Set: 577109.3339999999
+2025-02-11 00:02 | INFO | Query 50 Active Learning Instance Cost: 2915662.2
+2025-02-11 00:02 | INFO | Timeout limit is increased to 2800
+2025-02-11 00:04 | INFO | Query 51 Size of the uncertainty table is = 66977/145452
+2025-02-11 00:04 | INFO | Query 51 Size of the filtered table is = 1455
+2025-02-11 00:05 | INFO | Training Time Active Learning Classifier: 30.47 seconds
+2025-02-11 00:05 | INFO | Training Time Active Learning Regressor: 3.99 seconds
+2025-02-11 00:07 | INFO | Query 51 Active Learning Runtime on Validation Set: 1297343.314
+2025-02-11 00:07 | INFO | Query 51 Active Learning Runtime on Test Set: 577155.494
+2025-02-11 00:07 | INFO | Query 51 Active Learning Instance Cost: 3085305.34
+2025-02-11 00:09 | INFO | Query 52 Size of the uncertainty table is = 65280/145452
+2025-02-11 00:09 | INFO | Query 52 Size of the filtered table is = 1455
+2025-02-11 00:10 | INFO | Training Time Active Learning Classifier: 31.06 seconds
+2025-02-11 00:10 | INFO | Training Time Active Learning Regressor: 4.01 seconds
+2025-02-11 00:12 | INFO | Query 52 Active Learning Runtime on Validation Set: 1261941.354
+2025-02-11 00:12 | INFO | Query 52 Active Learning Runtime on Test Set: 577153.684
+2025-02-11 00:12 | INFO | Query 52 Active Learning Instance Cost: 3264322.03
+2025-02-11 00:14 | INFO | Query 53 Size of the uncertainty table is = 63626/145452
+2025-02-11 00:14 | INFO | Query 53 Size of the filtered table is = 1455
+2025-02-11 00:15 | INFO | Training Time Active Learning Classifier: 31.22 seconds
+2025-02-11 00:15 | INFO | Training Time Active Learning Regressor: 4.07 seconds
+2025-02-11 00:18 | INFO | Query 53 Active Learning Runtime on Validation Set: 1225824.0040000002
+2025-02-11 00:18 | INFO | Query 53 Active Learning Runtime on Test Set: 541158.694
+2025-02-11 00:18 | INFO | Query 53 Active Learning Instance Cost: 3415928.5
+2025-02-11 00:19 | INFO | Query 54 Size of the uncertainty table is = 61586/145452
+2025-02-11 00:19 | INFO | Query 54 Size of the filtered table is = 1455
+2025-02-11 00:20 | INFO | Training Time Active Learning Classifier: 31.59 seconds
+2025-02-11 00:20 | INFO | Training Time Active Learning Regressor: 4.08 seconds
+2025-02-11 00:23 | INFO | Query 54 Active Learning Runtime on Validation Set: 1298281.9640000002
+2025-02-11 00:23 | INFO | Query 54 Active Learning Runtime on Test Set: 505140.734
+2025-02-11 00:23 | INFO | Query 54 Active Learning Instance Cost: 3555248.37
+2025-02-11 00:23 | INFO | Timeout limit is increased to 2900
+2025-02-11 00:25 | INFO | Query 55 Size of the uncertainty table is = 59972/145452
+2025-02-11 00:25 | INFO | Query 55 Size of the filtered table is = 1455
+2025-02-11 00:25 | INFO | Training Time Active Learning Classifier: 31.98 seconds
+2025-02-11 00:25 | INFO | Training Time Active Learning Regressor: 4.1 seconds
+2025-02-11 00:28 | INFO | Query 55 Active Learning Runtime on Validation Set: 1261726.034
+2025-02-11 00:28 | INFO | Query 55 Active Learning Runtime on Test Set: 540963.784
+2025-02-11 00:28 | INFO | Query 55 Active Learning Instance Cost: 3694856.38
+2025-02-11 00:30 | INFO | Query 56 Size of the uncertainty table is = 58354/145452
+2025-02-11 00:30 | INFO | Query 56 Size of the filtered table is = 1455
+2025-02-11 00:30 | INFO | Training Time Active Learning Classifier: 32.62 seconds
+2025-02-11 00:30 | INFO | Training Time Active Learning Regressor: 4.12 seconds
+2025-02-11 00:33 | INFO | Query 56 Active Learning Runtime on Validation Set: 1189293.614
+2025-02-11 00:33 | INFO | Query 56 Active Learning Runtime on Test Set: 505279.90400000004
+2025-02-11 00:33 | INFO | Query 56 Active Learning Instance Cost: 3853336.69
+2025-02-11 00:35 | INFO | Query 57 Size of the uncertainty table is = 56821/145452
+2025-02-11 00:35 | INFO | Query 57 Size of the filtered table is = 1455
+2025-02-11 00:35 | INFO | Training Time Active Learning Classifier: 32.91 seconds
+2025-02-11 00:35 | INFO | Training Time Active Learning Regressor: 4.14 seconds
+2025-02-11 00:38 | INFO | Query 57 Active Learning Runtime on Validation Set: 1010315.9839999999
+2025-02-11 00:38 | INFO | Query 57 Active Learning Runtime on Test Set: 469112.704
+2025-02-11 00:38 | INFO | Query 57 Active Learning Instance Cost: 4077083.34
+2025-02-11 00:40 | INFO | Query 58 Size of the uncertainty table is = 55176/145452
+2025-02-11 00:40 | INFO | Query 58 Size of the filtered table is = 1455
+2025-02-11 00:40 | INFO | Training Time Active Learning Classifier: 33.18 seconds
+2025-02-11 00:41 | INFO | Training Time Active Learning Regressor: 4.17 seconds
+2025-02-11 00:43 | INFO | Query 58 Active Learning Runtime on Validation Set: 901984.674
+2025-02-11 00:43 | INFO | Query 58 Active Learning Runtime on Test Set: 469124.97400000005
+2025-02-11 00:43 | INFO | Query 58 Active Learning Instance Cost: 4321637.47
+2025-02-11 00:45 | INFO | Query 59 Size of the uncertainty table is = 53553/145452
+2025-02-11 00:45 | INFO | Query 59 Size of the filtered table is = 1455
+2025-02-11 00:45 | INFO | Training Time Active Learning Classifier: 33.36 seconds
+2025-02-11 00:45 | INFO | Training Time Active Learning Regressor: 4.21 seconds
+2025-02-11 00:48 | INFO | Query 59 Active Learning Runtime on Validation Set: 901653.924
+2025-02-11 00:48 | INFO | Query 59 Active Learning Runtime on Test Set: 325358.83400000003
+2025-02-11 00:48 | INFO | Query 59 Active Learning Instance Cost: 4572154.36
+2025-02-11 00:50 | INFO | Query 60 Size of the uncertainty table is = 51961/145452
+2025-02-11 00:50 | INFO | Query 60 Size of the filtered table is = 1455
+2025-02-11 00:50 | INFO | Training Time Active Learning Classifier: 33.73 seconds
+2025-02-11 00:50 | INFO | Training Time Active Learning Regressor: 4.21 seconds
+2025-02-11 00:53 | INFO | Query 60 Active Learning Runtime on Validation Set: 901898.524
+2025-02-11 00:53 | INFO | Query 60 Active Learning Runtime on Test Set: 361298.66400000005
+2025-02-11 00:53 | INFO | Query 60 Active Learning Instance Cost: 4812119.05
+2025-02-11 00:53 | INFO | Timeout limit is increased to 3000
+2025-02-11 00:55 | INFO | Query 61 Size of the uncertainty table is = 50346/145452
+2025-02-11 00:55 | INFO | Query 61 Size of the filtered table is = 1455
+2025-02-11 00:55 | INFO | Training Time Active Learning Classifier: 34.26 seconds
+2025-02-11 00:55 | INFO | Training Time Active Learning Regressor: 4.24 seconds
+2025-02-11 00:58 | INFO | Query 61 Active Learning Runtime on Validation Set: 757569.944
+2025-02-11 00:58 | INFO | Query 61 Active Learning Runtime on Test Set: 325344.704
+2025-02-11 00:58 | INFO | Query 61 Active Learning Instance Cost: 5174750.58
+2025-02-11 00:59 | INFO | Query 62 Size of the uncertainty table is = 48819/145452
+2025-02-11 00:59 | INFO | Query 62 Size of the filtered table is = 1455
+2025-02-11 01:00 | INFO | Training Time Active Learning Classifier: 34.44 seconds
+2025-02-11 01:00 | INFO | Training Time Active Learning Regressor: 4.27 seconds
+2025-02-11 01:03 | INFO | Query 62 Active Learning Runtime on Validation Set: 901245.114
+2025-02-11 01:03 | INFO | Query 62 Active Learning Runtime on Test Set: 325344.704
+2025-02-11 01:03 | INFO | Query 62 Active Learning Instance Cost: 5511762.22
+2025-02-11 01:03 | INFO | Timeout limit is increased to 3100
+2025-02-11 01:04 | INFO | Query 63 Size of the uncertainty table is = 47259/145452
+2025-02-11 01:04 | INFO | Query 63 Size of the filtered table is = 1455
+2025-02-11 01:05 | INFO | Training Time Active Learning Classifier: 35.01 seconds
+2025-02-11 01:05 | INFO | Training Time Active Learning Regressor: 4.27 seconds
+2025-02-11 01:08 | INFO | Query 63 Active Learning Runtime on Validation Set: 937815.264
+2025-02-11 01:08 | INFO | Query 63 Active Learning Runtime on Test Set: 325344.704
+2025-02-11 01:08 | INFO | Query 63 Active Learning Instance Cost: 5855655.7
+2025-02-11 01:08 | INFO | Timeout limit is increased to 3200
+2025-02-11 01:09 | INFO | Query 64 Size of the uncertainty table is = 45769/145452
+2025-02-11 01:09 | INFO | Query 64 Size of the filtered table is = 1455
+2025-02-11 01:10 | INFO | Training Time Active Learning Classifier: 35.33 seconds
+2025-02-11 01:10 | INFO | Training Time Active Learning Regressor: 4.32 seconds
+2025-02-11 01:13 | INFO | Query 64 Active Learning Runtime on Validation Set: 1189313.264
+2025-02-11 01:13 | INFO | Query 64 Active Learning Runtime on Test Set: 361325.02400000003
+2025-02-11 01:13 | INFO | Query 64 Active Learning Instance Cost: 6225510.55
+2025-02-11 01:13 | INFO | Timeout limit is increased to 3300
+2025-02-11 01:14 | INFO | Query 65 Size of the uncertainty table is = 44200/145452
+2025-02-11 01:14 | INFO | Query 65 Size of the filtered table is = 1455
+2025-02-11 01:15 | INFO | Training Time Active Learning Classifier: 36.04 seconds
+2025-02-11 01:15 | INFO | Training Time Active Learning Regressor: 4.37 seconds
+2025-02-11 01:17 | INFO | Query 65 Active Learning Runtime on Validation Set: 1225288.304
+2025-02-11 01:17 | INFO | Query 65 Active Learning Runtime on Test Set: 397310.47400000005
+2025-02-11 01:17 | INFO | Query 65 Active Learning Instance Cost: 6624174.97
+2025-02-11 01:17 | INFO | Timeout limit is increased to 3400
+2025-02-11 01:19 | INFO | Query 66 Size of the uncertainty table is = 42694/145452
+2025-02-11 01:19 | INFO | Query 66 Size of the filtered table is = 1455
+2025-02-11 01:20 | INFO | Training Time Active Learning Classifier: 37.1 seconds
+2025-02-11 01:20 | INFO | Training Time Active Learning Regressor: 4.37 seconds
+2025-02-11 01:22 | INFO | Query 66 Active Learning Runtime on Validation Set: 757422.884
+2025-02-11 01:22 | INFO | Query 66 Active Learning Runtime on Test Set: 397283.47400000005
+2025-02-11 01:22 | INFO | Query 66 Active Learning Instance Cost: 6999356.42
+2025-02-11 01:24 | INFO | Query 67 Size of the uncertainty table is = 41212/145452
+2025-02-11 01:24 | INFO | Query 67 Size of the filtered table is = 1455
+2025-02-11 01:24 | INFO | Training Time Active Learning Classifier: 36.4 seconds
+2025-02-11 01:25 | INFO | Training Time Active Learning Regressor: 4.41 seconds
+2025-02-11 01:27 | INFO | Query 67 Active Learning Runtime on Validation Set: 1153345.1840000001
+2025-02-11 01:27 | INFO | Query 67 Active Learning Runtime on Test Set: 361330.15400000004
+2025-02-11 01:27 | INFO | Query 67 Active Learning Instance Cost: 7537211.08
+2025-02-11 01:27 | INFO | Timeout limit is increased to 3500
+2025-02-11 01:28 | INFO | Query 68 Size of the uncertainty table is = 39511/145452
+2025-02-11 01:28 | INFO | Query 68 Size of the filtered table is = 1455
+2025-02-11 01:29 | INFO | Training Time Active Learning Classifier: 36.92 seconds
+2025-02-11 01:29 | INFO | Training Time Active Learning Regressor: 4.47 seconds
+2025-02-11 01:32 | INFO | Query 68 Active Learning Runtime on Validation Set: 937589.874
+2025-02-11 01:32 | INFO | Query 68 Active Learning Runtime on Test Set: 361298.324
+2025-02-11 01:32 | INFO | Query 68 Active Learning Instance Cost: 8198398.0
+2025-02-11 01:33 | INFO | Query 69 Size of the uncertainty table is = 37848/145452
+2025-02-11 01:33 | INFO | Query 69 Size of the filtered table is = 1455
+2025-02-11 01:34 | INFO | Training Time Active Learning Classifier: 37.21 seconds
+2025-02-11 01:34 | INFO | Training Time Active Learning Regressor: 4.56 seconds
+2025-02-11 01:37 | INFO | Query 69 Active Learning Runtime on Validation Set: 865874.7039999999
+2025-02-11 01:37 | INFO | Query 69 Active Learning Runtime on Test Set: 289352.314
+2025-02-11 01:37 | INFO | Query 69 Active Learning Instance Cost: 8688843.36
+2025-02-11 01:38 | INFO | Query 70 Size of the uncertainty table is = 36336/145452
+2025-02-11 01:38 | INFO | Query 70 Size of the filtered table is = 1455
+2025-02-11 01:39 | INFO | Training Time Active Learning Classifier: 37.54 seconds
+2025-02-11 01:39 | INFO | Training Time Active Learning Regressor: 4.53 seconds
+2025-02-11 01:41 | INFO | Query 70 Active Learning Runtime on Validation Set: 937393.8439999999
+2025-02-11 01:41 | INFO | Query 70 Active Learning Runtime on Test Set: 325332.924
+2025-02-11 01:41 | INFO | Query 70 Active Learning Instance Cost: 9242717.35
+2025-02-11 01:41 | INFO | Timeout limit is increased to 3600
+2025-02-11 01:43 | INFO | Query 71 Size of the uncertainty table is = 34374/145452
+2025-02-11 01:43 | INFO | Query 71 Size of the filtered table is = 1455
+2025-02-11 01:44 | INFO | Training Time Active Learning Classifier: 37.99 seconds
+2025-02-11 01:44 | INFO | Training Time Active Learning Regressor: 4.56 seconds
+2025-02-11 01:46 | INFO | Query 71 Active Learning Runtime on Validation Set: 757494.4539999999
+2025-02-11 01:46 | INFO | Query 71 Active Learning Runtime on Test Set: 325330.954
+2025-02-11 01:46 | INFO | Query 71 Active Learning Instance Cost: 9733048.51
+2025-02-11 01:47 | INFO | Query 72 Size of the uncertainty table is = 9180/145452
+2025-02-11 01:47 | INFO | Query 72 Size of the filtered table is = 1455
+2025-02-11 01:47 | INFO | Training Time Active Learning Classifier: 38.4 seconds
+2025-02-11 01:47 | INFO | Training Time Active Learning Regressor: 4.6 seconds
+2025-02-11 01:50 | INFO | Query 72 Active Learning Runtime on Validation Set: 757981.6039999999
+2025-02-11 01:50 | INFO | Query 72 Active Learning Runtime on Test Set: 289350.124
+2025-02-11 01:50 | INFO | Query 72 Active Learning Instance Cost: 10248054.44
+2025-02-11 01:50 | INFO | Timeout limit is increased to 3600
+2025-02-11 01:50 | INFO | Query 73 Size of the uncertainty table is = 6210/145452
+2025-02-11 01:50 | INFO | Query 73 Size of the filtered table is = 1455
+2025-02-11 01:51 | INFO | Training Time Active Learning Classifier: 38.46 seconds
+2025-02-11 01:51 | INFO | Training Time Active Learning Regressor: 4.61 seconds
+2025-02-11 01:54 | INFO | Query 73 Active Learning Runtime on Validation Set: 758024.9839999999
+2025-02-11 01:54 | INFO | Query 73 Active Learning Runtime on Test Set: 289351.184
+2025-02-11 01:54 | INFO | Query 73 Active Learning Instance Cost: 10856671.41
+2025-02-11 01:54 | INFO | Timeout limit is increased to 3600
+2025-02-11 01:54 | INFO | Query 74 Size of the uncertainty table is = 2373/145452
+2025-02-11 01:54 | INFO | Query 74 Size of the filtered table is = 1455
+2025-02-11 01:55 | INFO | Training Time Active Learning Classifier: 38.69 seconds
+2025-02-11 01:55 | INFO | Training Time Active Learning Regressor: 4.64 seconds
+2025-02-11 01:57 | INFO | Query 74 Active Learning Runtime on Validation Set: 830072.924
+2025-02-11 01:57 | INFO | Query 74 Active Learning Runtime on Test Set: 397221.074
+2025-02-11 01:57 | INFO | Query 74 Active Learning Instance Cost: 11454750.18
+2025-02-11 01:57 | INFO | Timeout limit is increased to 3600
+2025-02-11 01:57 | INFO | Active Learning Emissions: 0.25495756956742915
+2025-02-11 01:57 | INFO | Active Learning Energy Consumption: 0.2774003461944357 kWh
+2025-02-11 01:57 | INFO | runtime_test_score is written as json file
+2025-02-11 01:57 | INFO | runtime_validation_score is written as json file
+2025-02-11 01:57 | INFO | instance_cost is written as json file
+2025-02-11 01:57 | INFO | Experiment is finished
